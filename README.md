@@ -13,6 +13,12 @@ This project is based on [node-2fa](https://github.com/jeremyscalpello/node-2fa)
 npm install twofac --save
 ```
 
+or
+
+```bash
+bun add twofac
+```
+
 ### Usage
 ```javascript
 import twofac from "twofac";
