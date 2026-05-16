@@ -1,17 +1,35 @@
 {
   "name": "twofac",
-  "version": "0.0.3",
-  "description": "2FA for Node.js",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "2FA / TOTP for Node.js (RFC 6238)",
   "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reeg-sk/twofac.git"
   },
   "keywords": [
     "2fa",
+    "totp",
+    "otp",
     "nodejs",
-    "otpauth"
+    "otpauth",
+    "rfc6238"
   ],
   "author": "reeg-sk",
   "license": "MIT",
